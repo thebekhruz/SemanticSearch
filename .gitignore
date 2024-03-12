@@ -1,3 +1,18 @@
+# ================================
+# Custom User-Defined Ignored Files
+# ================================
+
+# ENV
+
+.DS_Store
+
+
+
+
+# ================================
+# Standard Template for Python Projects
+# ================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

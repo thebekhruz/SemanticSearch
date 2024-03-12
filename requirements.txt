@@ -1,0 +1,15 @@
+# Required Python Packages
+pandas
+numpy
+sentence-transformers
+scikit-learn
+spacy
+streamlit
+jupyter
+
+# Spacy Models Installation
+# Use these commands in your terminal to download essential Spacy models for text preprocessing.
+# Command to download the small English model:
+# python -m spacy download en_core_web_sm
+# Command to download the medium English model:
+# python -m spacy download en_core_web_md
