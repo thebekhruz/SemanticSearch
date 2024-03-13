@@ -1,6 +1,4 @@
 import streamlit as st
-from db.model_utils import ModelUtils
-from db.enums import EntityType
 from queries.cypher_query_builder import CypherQueryBuilder 
 from ui.results_displayer import ResultsDisplayer
 
@@ -73,6 +71,13 @@ class ContainerUI():
 
 
         return subject_entity, attribute_type, attribute_value, date_from_parsed, date_to_parsed
+
+
+
+    def display_search_input(self):
+        container = st.container(height = 500, border=True)
+        query = container.text_input('Input your query here:')
+        return query, container
 
 
 

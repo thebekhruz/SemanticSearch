@@ -6,6 +6,11 @@ scikit-learn
 spacy
 streamlit
 jupyter
+neo4j
+neomodel
+watchdog
+streamlit-aggrid
+
 
 # Spacy Models Installation
 # Use these commands in your terminal to download essential Spacy models for text preprocessing.

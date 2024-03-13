@@ -1,4 +1,4 @@
-from db.neo4j_connection import Neo4jConnection  # Import the connection class
+from semantic_search_app.db.DatabaseManager import Neo4jConnection  # Import the connection class
 import streamlit as st
 
 
