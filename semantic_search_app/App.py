@@ -16,10 +16,14 @@ class App:
         self.search = SemanticSearch(self.text_processor, self.db_manager)
 
     def _main(self):
+        st.title("Semantic Search Engine")
+        st.markdown("""
+        Welcome to our Semantic Search Engine! This tool allows you to search through a vast database of documents using natural language queries. Just type in what you're looking for, and our search engine will do its best to find the most relevant documents for you.
+        """)
         self.db_manager.connect()
         query = SearchUI.search_sidebar()
+
         results = self.search.semantic_search(query)
-        
         results_viewer = ResultsViewer(results, search_engine=self.search)
         results_viewer.display_table()
         # Process and display results, similar to prepare_and_display_table_data
